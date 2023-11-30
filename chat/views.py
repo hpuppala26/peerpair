@@ -21,6 +21,7 @@ def index(request):
 def room(request, room_name):
     if roomvalidate(request.user.username,room_name):
         recentlist = get_recents(request.user.username)
+        print(recentlist)
         return render(request, 'chat/chatroom.html', {
             'room_name_json': mark_safe(json.dumps(room_name)),
             'message_log':load_log(room_name),

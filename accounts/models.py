@@ -9,7 +9,7 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = models.CharField(max_length=255, blank=True, null=True)
     city = models.CharField(max_length=200, blank=True, null=True)
-    picture = models.ImageField(upload_to='profile_image', blank=True, default='default.jpg')
+    picture = models.ImageField(upload_to='profile_image', blank=True, default='default_profile.jpeg')
 
     def __str__(self):
         return self.user.username

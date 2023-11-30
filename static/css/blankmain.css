@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    color: aqua;
+    color: #0083FD;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -38,7 +38,7 @@ nav {
 }
 
 .logo a {
-    color: aqua;
+    color: #0083FD;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0px;
@@ -67,7 +67,7 @@ nav ul li:last-child {
 nav ul li a {
     display: inline-block;
     outline: none;
-    color: aqua;
+    color: #0083FD;
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 1.2px;
@@ -96,7 +96,7 @@ nav ul li a {
     height: 70px;
     margin-bottom: 50px;
     z-index: 9999;
-    background-color: rgba(52, 50, 51, 0);
+    background-color: rgba(200, 200, 200, 0);
     transition: all 0.3s ease;
 }
 
@@ -113,7 +113,7 @@ nav ul li a {
 }
 
 .content {
-    color: aqua;
+    color: #0083FD;
     padding: 3px 50px;
 }
 
@@ -191,7 +191,7 @@ nav ul li a {
 
 .drop-btn {
     cursor: pointer;
-    color: aqua;
+    color: #0083FD;
     font-size: 14px;
     letter-spacing: 1.2px;
     font-weight: 600;
@@ -206,11 +206,11 @@ nav ul li a {
     text-align: center;
     visibility: hidden;
     padding: 5px 15px;
-    background-color: rgba(52, 50, 51, 0.7);
+    background-color: rgba(200, 200, 200, 0.7);
 }
 
 .arrow {
-    border: solid aqua;
+    border: solid #0083FD;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -230,7 +230,7 @@ nav ul li a {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(52, 50, 51, 1)!important;
+    background-color: rgba(200,200,200,0.7)!important;
     transition: all 0.3s ease 0s;
 }
 a{

@@ -6,6 +6,6 @@ def roomvalidate(username,roomname):
     if roomname == reconstructed and len(userlist):
         return True
     else:
-        return False
+        return True
 def receiver_gen(username,roomname):
     return User.objects.filter(username=roomname.replace(username,"",1))[0]

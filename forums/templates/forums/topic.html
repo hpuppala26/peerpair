@@ -10,12 +10,12 @@
 	src: url({% static 'fonts/Material_Icons' %}.woff2) format('woff2');
 }
 #Submit{
-  color: aqua;
-  background-color: rgb(52, 50, 51);
+  color: #0083FD;
+  background-color: rgb(200, 200, 200);
   transition: all 0.1s ease;
   cursor: pointer;
   width: 20%;
-  border-color: aqua;
+  border-color: #0083FD;
   border-radius: 100px;
   background: none;
   font-family: Sitefont-medium;
@@ -23,19 +23,19 @@
   padding: 7px;
 }
 #Submit:hover{
-  color: rgb(52, 50, 51);
-  background-color: aqua;
+  color: rgb(200, 200, 200);
+  background-color: #0083FD;
   transition: all 0.1s ease;
 }
 #Submit-post{
   width: 10%;
   border-radius: 2px 2px 10px 2px;
   height:100px;
-  color: aqua;
-  background-color: rgb(52, 50, 51);
+  color: #0083FD;
+  background-color: rgb(200, 200, 200);
   transition: all 0.1s ease;
   cursor: pointer;
-  border-color: aqua;
+  border-color: #0083FD;
   background: none;
   font-family: Sitefont-medium;
   font-size: 15px;
@@ -43,19 +43,19 @@
   margin-top: 20px;
 }
 #Submit-post:hover{
-  color: rgb(52, 50, 51);
-  background-color: aqua;
+  color: rgb(200, 200, 200);
+  background-color: #0083FD;
   transition: all 0.1s ease;
 }
 #Submit-attachment{
   width: 5%;
   border-radius: 2px;
   height:100px;
-  color: aqua;
-  background-color: rgb(52, 50, 51);
+  color: #0083FD;
+  background-color: rgb(200, 200, 200);
   transition: all 0.1s ease;
   cursor: pointer;
-  border-color: aqua;
+  border-color: #0083FD;
   background: none;
   font-family: Sitefont-medium;
   font-size: 15px;
@@ -63,8 +63,8 @@
   margin-top: 20px;
 }
 #Submit-attachment:hover{
-  color: rgb(52, 50, 51);
-  background-color: aqua;
+  color: rgb(200, 200, 200);
+  background-color: #0083FD;
   transition: all 0.1s ease;
 }
 #Submit-attachment i{
@@ -83,7 +83,7 @@
 }
 .postcont{
 	padding: 20px 30px;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.07);
 	transition: background 2s ease;
 	border-bottom: 0.5px solid black;
 	overflow: auto;
@@ -96,13 +96,13 @@
 	filter: drop-shadow( -0.1px -0.1px 5px coral);
 }
 .postcont span{
-	color: aqua;
+	color: #0083FD;
 }
 .postcont:nth-of-type(1){
 	border-top: 0.5px solid black;
 }
 .postcont:hover{
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.25);
 	transition: background 1s ease;
 }
 @media screen and (max-width: 750px) {
@@ -174,7 +174,7 @@
     background-color: rgba(0, 0, 0, 0.4)
 }
 .card{
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
 }
 .animate-top {
     position: relative;
@@ -210,7 +210,7 @@
 	float:right;
 }
 .close{
-	color: aqua;
+	color: #0083FD;
 	background-color: #343233;
 	transition: color 0.5s ease;
 	transition: background-color 0.5s ease; 
@@ -220,7 +220,7 @@
 }
 .close:hover{
 	color: #343233;
-	background-color: aqua;
+	background-color: #0083FD;
 	transition: color 0.5s ease;
 	transition: background-color 0.5s ease; 
 }
@@ -269,7 +269,7 @@
 			<div class="modal-content animate-top card">
 				<header style="background:#343233;height: 30px;"> 
 					<button onclick="closemodal()" class="close top-right">&times;</button>
-					<h2 style="margin-top: 0px;color: aqua;">Upload Files</h2>
+					<h2 style="margin-top: 0px;color: #0083FD;">Upload Files</h2>
 				</header>
 				<iframe id="files_frame" name="files_frame" src="{% url 'fileindex' %}"></iframe>
 			</div>

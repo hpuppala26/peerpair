@@ -42,7 +42,7 @@ def signup_view(request):
             user.is_active = True
             user.save()
             current_site = get_current_site(request)
-            mail_subject = 'Activate your Circlr account.'
+            mail_subject = 'Activate your PeerPair account.'
             message = render_to_string('accounts/acc_active_email.html', {
                 'user': user,
                 'domain': current_site.domain,
