@@ -26,7 +26,7 @@ SECRET_KEY = 'n%(cvt%f)g_u48%0-ddf)rq6t%xlx9ot)(gwi63(dtz0o@%@k('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -99,7 +99,12 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'H3fH5fb2fDF-EGBBcDCFgHGA5-4hEhgf',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '59039',
+
     }
 }
 
@@ -175,3 +180,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'circlr/media')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
 
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
